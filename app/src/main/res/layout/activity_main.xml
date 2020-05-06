@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:id="@+id/toEaseActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="封装之前使用MVP"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="封装MVP后Activity使用"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/toEaseActivity" />
+
+    <Button
+        android:id="@+id/toFragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="封装MVP后Fragment使用"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/toActivity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
